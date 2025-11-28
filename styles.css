@@ -1,0 +1,169 @@
+/* Reset básico y tipografía general */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f0f8ff;
+  color: #123;
+  line-height: 1.6;
+}
+
+/* Cabecera */
+header {
+  background: linear-gradient(135deg, #1e90ff, #87cefa);
+  color: #fff;
+  text-align: center;
+  padding: 25px 15px;
+}
+
+header h1 {
+  font-size: 2.4rem;
+  letter-spacing: 1px;
+}
+
+header p {
+  margin-top: 8px;
+  font-size: 1.05rem;
+}
+
+/* Navegación */
+nav {
+  background: #104e8b;
+  text-align: center;
+  padding: 10px 5px;
+}
+
+nav a {
+  display: inline-block;
+  color: #fff;
+  margin: 0 12px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.98rem;
+  padding: 6px 10px;
+  border-radius: 20px;
+  transition: background 0.2s ease, transform 0.15s ease;
+}
+
+nav a:hover {
+  background: #1e90ff;
+  transform: translateY(-1px);
+}
+
+/* Contenido principal */
+main {
+  max-width: 960px;
+  margin: 20px auto 40px;
+  padding: 0 15px;
+}
+
+/* Títulos de sección */
+section {
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: #1e90ff;
+  border-bottom: 2px solid rgba(30, 144, 255, 0.2);
+  padding-bottom: 6px;
+  margin-bottom: 12px;
+  font-size: 1.5rem;
+}
+
+p {
+  margin-bottom: 10px;
+  font-size: 0.98rem;
+}
+
+/* Bloque de personajes (tarjetas) */
+.personajes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.tarjeta {
+  flex: 1 1 220px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+  padding: 15px 14px;
+  border: 2px solid rgba(135, 206, 250, 0.5);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.tarjeta h3 {
+  margin-bottom: 6px;
+  color: #104e8b;
+  font-size: 1.15rem;
+}
+
+.tarjeta p {
+  font-size: 0.95rem;
+}
+
+.tarjeta:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.12);
+}
+
+/* Enfatizar nombres importantes dentro del texto */
+strong {
+  color: #104e8b;
+}
+
+/* Pie de página */
+footer {
+  background: #1e90ff;
+  color: #fff;
+  text-align: center;
+  padding: 10px 8px;
+  font-size: 0.85rem;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  nav a {
+    margin: 4px 6px;
+    font-size: 0.9rem;
+  }
+
+  .personajes {
+    gap: 12px;
+  }
+
+  .tarjeta {
+    flex: 1 1 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 18px 10px;
+  }
+
+  header h1 {
+    font-size: 1.7rem;
+  }
+
+  main {
+    margin-top: 15px;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+  }
+}
